@@ -1,0 +1,21 @@
+#Creating a class of name Student and its objects, creating copy constructurs
+
+#include <iostream>
+using namespace std;
+
+class Student{
+  public:
+     int rollNumber;
+     int age;
+};
+int main(){
+  Student s1;
+  s1.rollNumber = 20;
+  cout<<s1.rollNumber<<endl;
+  Student s2(s1);
+  s1.age = 23;
+  cout<<s2.age<<endl;
+  s1.rollNumber = 234;
+  cout<<s2.rollNumber<<endl;
+  cout<<s1.age<<endl;
+}
