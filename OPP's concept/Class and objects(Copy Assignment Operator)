@@ -1,0 +1,27 @@
+//Copy Assignmnet Operator
+
+
+#include <iostream>
+using namespace std;
+
+class Student{
+  private:
+     int age;
+  public:
+     int rollNumber;
+     Student(int rollNum, int ag){
+       rollNumber = rollNum;
+       age = ag;
+     }
+     int getNumber(){ //getters
+       return age;
+     }
+};
+
+int main(){
+  Student s1(12, 15);
+  Student s2(13, 16);
+  Student *s3 = new Student(14, 15);
+  Student s4 = s1;//Copy Assignment Operator
+  cout<<s4.rollNumber<<endl;
+}
