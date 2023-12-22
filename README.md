@@ -18,7 +18,7 @@ Objects can be made using various methods.
 Objects are made either statically or dyanmically.
 Eg-
 
-Student s1; // creating object statically   (s1 is the object that holds properties of class Student)
-Student *s2 = new Student;   // creating object dynamically  (*s2 is the pointer variable to a memory location which has properties of class Student)
+Student s1; // creating object statically   (s1 is the object that holds properties of class Student, object s1 creates a memory block of 8 bytes)
+Student *s2 = new Student;   // creating object dynamically  (*s2 is the pointer variable to a memory location which has properties of class Student, which means s2 holds adress to the object)
 
 
