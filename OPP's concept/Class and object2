@@ -1,0 +1,23 @@
+//Creating objects Dynamically
+
+#include <iostream>
+using namespace std;
+
+class Student{
+  public:
+     int rollNumber;
+     int age;
+     void display(){
+       cout<<age<<" "<<rollNumber;
+     }
+};
+
+int main(){
+  Student s1;
+  Student s2;   //Creating object Statically
+  Student *s3 = new Student(); //Dynamic Allocation of Object
+  (*s3).age = 24;
+  cout<<(*s3).age<<endl;
+  s3->rollNumber = 101;
+  cout<<s3->rollNumber<<endl;
+}
