@@ -63,5 +63,14 @@ Student *s3 = new Student(20, 200001);
 Student s4(*s3); //Copy Constructor(s4 is a copy of s3)
 
 
+Copy Assignment Operator - This operator copies all properties of an object to another object.
+
+Eg - 
+Student s1(101, 10001)
+Student s2 = s1; //Copies all properties of s1 to s2
+
+
+
+
 
 
