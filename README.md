@@ -70,7 +70,7 @@ Student s1(101, 10001)
 Student s2 = s1; //Copies all properties of s1 to s2
 
 
-
-
+Destructor - It has the same name as the class name and has no return type. 
+A destructor deallocates memory when it is called, but can not deallocate dynamically allocated memory.
 
 
