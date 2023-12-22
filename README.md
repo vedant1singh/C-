@@ -39,3 +39,36 @@ class Student{
        age = a;   //Accessing private variable age, which can be called through object.
      }
 };
+
+
+Constructors-
+Constructors is a block of code used to initialize an object. Constructor is same name as the class name. It has no return type and when constructor is not created, a default constructor is called.
+A deault constructor initializes the object with default values. A contructor is invoked when an object is created.
+
+Eg -
+int main(){
+   Student s1; // Student s1 object is created and it calls default constructor with the defualt values.
+   Student s2(12, "Ravi");   //Student s2 object is created and it calls parametrized constructor.
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
