@@ -1,0 +1,31 @@
+// Creating getters and setters
+
+In an class, a private varaible can not be accessed using the object directly which is outside the class. To access the private variable we use public function or called as getters and setters.
+
+#include <iostream>
+using namespace std;
+
+class Student{
+  private:
+     int age;
+  public:
+     int rollNumber;
+     void display(){
+       cout<<age<<" "<<rollNumber<<endl;
+     }
+     int getAge(){   //Getter
+       return age;
+     }
+     void setAge(int a){ //Setter
+       age = a;
+     }
+};
+
+int main(){
+  Student s1;
+  Student s2;
+  Student *s3 = new Student();
+  (*s3).setAge(24);
+  cout<<(*s3).getAge()<<endl;
+  
+}
