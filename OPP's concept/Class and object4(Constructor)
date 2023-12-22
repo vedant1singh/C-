@@ -12,6 +12,9 @@ class Student{
        rollNumber = rollNum;
        age = ag;
      }
+     int getNumber(){
+       return age;
+     }
 };
 
 int main(){
@@ -19,4 +22,5 @@ int main(){
   Student s2(13, 16);
   Student *s3 = new Student(14, 15);
   cout<<(*s3).rollNumber<<endl;
+  cout<<(*s3).getNumber()<<endl;
 }
