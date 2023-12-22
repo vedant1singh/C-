@@ -1,4 +1,4 @@
-In OOPs, we carete classes and objects to solve real world problems.
+In OOPs, we create classes and objects to solve real world problems.
 
 
 Class - Classes are user defined data dypes, which is the blueprint or the design of an object. When we create a class we create a copy to the class.
@@ -51,23 +51,16 @@ int main(){
    Student s2(12, "Ravi");   //Student s2 object is created and it calls parametrized constructor.
 }
 
+this keyword - this holds the address of current object.
 
+Copy Constructor - When an object is created passing an already existing object as its parameter, then all the properties of the passed object is copied to the new object.
 
+Eg- 
+Student s1(101, 10001)
+Student s2(s1);  //Copy Constructor(s2 is a copy of s1)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Student *s3 = new Student(20, 200001);
+Student s4(*s3); //Copy Constructor(s4 is a copy of s3)
 
 
 
