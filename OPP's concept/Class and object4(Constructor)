@@ -1,0 +1,22 @@
+//Constructor
+
+#include <iostream>
+using namespace std;
+
+class Student{
+  private:
+     int age;
+  public:
+     int rollNumber;
+     Student(int rollNum, int ag){
+       rollNumber = rollNum;
+       age = ag;
+     }
+};
+
+int main(){
+  Student s1(12, 15);
+  Student s2(13, 16);
+  Student *s3 = new Student(14, 15);
+  cout<<(*s3).rollNumber<<endl;
+}
