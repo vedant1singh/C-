@@ -21,4 +21,21 @@ Eg-
 Student s1; // creating object statically   (s1 is the object that holds properties of class Student, object s1 creates a memory block of 8 bytes)
 Student *s2 = new Student;   // creating object dynamically  (*s2 is the pointer variable to a memory location which has properties of class Student, which means s2 holds adress to the object)
 
-
+Getters and Setters-
+In an class, a private varaible can not be accessed using the object directly which is outside the class. To access the private variable we use public function or called as getters and setters.
+Eg-
+class Student{
+  private:
+     int age;
+  public:
+     int rollNumber;
+     void display(){
+       cout<<age<<" "<<rollNumber<<endl;
+     }
+     int getAge(){   //Getter
+       return age;  //Accessing private variable age, which can be called through object.
+     }
+     void setAge(int a){ //Setter
+       age = a;   //Accessing private variable age, which can be called through object.
+     }
+};
