@@ -25,3 +25,31 @@ int main(){
   cout<<n1.data<<endl;
   
 }
+
+
+
+//Creating a linked by Dynamic allocation of Node.
+
+#include <iostream>
+using namespace std;
+
+class Node{
+  public:
+    int data;
+    Node *next;
+    Node(int data){
+      this->data = data;
+      next = NULL;
+    }
+};
+
+int main(){
+  Node n1(123); //Creating Node Statically
+  Node *head = &n1;
+  Node n2(124);
+  n1.next = &n2;
+  Node *n3 = new Node(125);  //Creating Node Dynamically
+  n2.next = n3;              //n3 is a pointer that holds address of Node n3.
+  Node *n4 = new Node(125); 
+  n3->next =  n4;
+}
