@@ -1,0 +1,27 @@
+//This program creates a Linked List. A linked list consist of a multiple elements, each element consist of a data and a node pointer that points to the address of the next Node.
+//
+
+
+#include <iostream>
+using namespace std;
+
+class Node{   // creating a Node class that has toe properties, Node and pointer variable that holds address of next Node.
+  public:
+    int data;
+    Node *next;
+    Node(int data){    //Initializing the constructor.
+      this->data = data;
+      next = NULL;
+  }
+};
+
+int main(){
+  Node n1(11);       //Creating first Node
+  Node *head = &n1;  // Initializing address of first node to a pointer variable called as head. head holds address of n1.
+  Node n2(12);       //Creating second node
+  n1.next = &n2;     //Storing address of Node n2 in n1. As next is a pointer variable that holds address of another Node.
+  Node n3(13);       //Creating third node.
+  n2.next = &n3;
+  cout<<n1.data<<endl;
+  
+}
