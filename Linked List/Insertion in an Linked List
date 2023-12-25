@@ -45,17 +45,18 @@ void printNode(Node *head, int i)
 	}
 }
 
-void insertNode(Node *head, int i , int data){  //Inserts the element at ith index
+void insertNode(Node *head, int i , int data){
   Node *newNode = new Node(data);
   Node *temp = head;
   int count = 0;
-  while(count<i-1){
+  while(temp!=NULL && count<i-1){
     count++;
     temp = temp->next;
   }
-  newNode->next = temp->next;
-  temp->next = newNode;
-  
+  if(temp!=NULL){
+    newNode->next = temp->next;
+    temp->next = newNode;
+  }
 }
 
 void insertAtBeginning(Node* &head, int data){ //address of head needs to be passed
