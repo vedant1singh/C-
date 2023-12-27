@@ -5,7 +5,7 @@
 #include <iostream>
 using namespace std;
 
-class Node{   // creating a Node class that has toe properties, Node and pointer variable that holds address of next Node.
+class Node{   // creating a Node class that has toe properties, data and pointer variable that holds address of next Node.
   public:
     int data;
     Node *next;
